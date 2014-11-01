@@ -9,7 +9,9 @@
     "core-icon-button": "Polymer/core-icon-button#~0.4.2",
     "core-scroll-header-panel": "Polymer/core-scroll-header-panel#~0.4.2",
     "core-drawer-panel": "Polymer/core-drawer-panel#~0.4.2",
-    "material-jekyll": "charbelrami/material-jekyll#master"
+    "material-jekyll": "charbelrami/material-jekyll#master",
+    "x-fontawesome": "~0.2.0",
+    "akyral-layout": "filaraujo/akyral-layout#master"
   },
   "devDependencies": {
     "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
