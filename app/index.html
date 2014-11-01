@@ -1,15 +1,27 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <script src="lib/platform/platform.js"></script>
+  <link rel="stylesheet" href="styles/app.css" />
   <link rel="import" href="lib/polymer/polymer.html">
-  <link rel="import" href="lib/core-component-page/core-component-page.html">
-
+  <link rel="import" href="lib/core-toolbar/core-toolbar.html">
+  <link rel="import" href="lib/core-icons/core-icons.html">
+  <link rel="import"
+    href="lib/paper-icon-button/paper-icon-button.html">
+  <link rel="import"
+    href="lib/paper-progress/paper-progress.html">
 </head>
-<body unresolved>
+<body fullbleed>
 
-  <core-component-page></core-component-page>
-
+<core-toolbar class="tall">
+  <paper-icon-button icon="menu"></paper-icon-button>
+  <div class="middle indent">My App</div>
+  <span flex></span>
+  <paper-icon-button icon="search" ></paper-icon-button>
+  <paper-progress class="bottom fit" value="30"></paper-progress>
+</core-toolbar>
 </body>
 </html>

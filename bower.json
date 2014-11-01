@@ -4,9 +4,17 @@
   "version": "0.0.0",
   "dependencies": {
     "platform": "Polymer/platform#~0.3.3",
-    "polymer": "Polymer/polymer#~0.3.3"
+    "polymer": "Polymer/polymer#~0.4.2",
+    "marked": "~0.3.2",
+    "core-icon-button": "Polymer/core-icon-button#~0.4.2",
+    "core-scroll-header-panel": "Polymer/core-scroll-header-panel#~0.4.2",
+    "core-drawer-panel": "Polymer/core-drawer-panel#~0.4.2",
+    "material-jekyll": "charbelrami/material-jekyll#master"
   },
   "devDependencies": {
-    "closure-compiler" : "http://dl.google.com/closure-compiler/compiler-latest.zip"
+    "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
+  },
+  "resolutions": {
+    "polymer": "~0.4.2"
   }
 }
