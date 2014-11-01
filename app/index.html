@@ -7,21 +7,53 @@
   <script src="lib/platform/platform.js"></script>
   <link rel="stylesheet" href="styles/app.css" />
   <link rel="import" href="lib/polymer/polymer.html">
+  <link href="lib/font-roboto/roboto.html" rel="import">
   <link rel="import" href="lib/core-toolbar/core-toolbar.html">
   <link rel="import" href="lib/core-icons/core-icons.html">
   <link rel="import"
     href="lib/paper-icon-button/paper-icon-button.html">
   <link rel="import"
+    href="lib/paper-menu-button/paper-menu-button.html">
+  <link rel="import"
     href="lib/paper-progress/paper-progress.html">
+  <link rel="import" href="lib/paper-item/paper-item.html">
+  <link rel="import" href="lib/paper-button/paper-button.html">
+  <link rel="import" href="lib/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="lib/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="lib/polymer-fontawesome/polymer-fontawesome.html">
+     <style shim-shadowdom>
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+    }
+    paper-button[raised].colored {
+      background: #4285f4;
+      color: #fff;
+    }
+  </style>
 </head>
 <body fullbleed>
-
+<main>
 <core-toolbar class="tall">
-  <paper-icon-button icon="menu"></paper-icon-button>
+  <paper-menu-button icon="menu">
+   <paper-item icon="refresh" label="Bookmark"></paper-item>
+   <paper-item icon="favorite" label="Bookmark"></paper-item>
+   <paper-item icon="bookmark" label="Bookmark"></paper-item>
+
+ </paper-menu-button>
+
   <div class="middle indent">My App</div>
   <span flex></span>
   <paper-icon-button icon="search" ></paper-icon-button>
   <paper-progress class="bottom fit" value="30"></paper-progress>
 </core-toolbar>
+</main>
+<footer>
+<div>
+  <div class="links">
+    <a href="http://modx.ws"><paper-button raised class="colored">MODX blog</paper-button></a>
+    <a href="http://github.com/Viktorminator"><paper-button raised><core-icon icon="social:post-github"></core-icon><font-awesome icon="home"></font-awesome> Github</paper-button></a>
+  </div>
+</div>
+</footer>
 </body>
 </html>
